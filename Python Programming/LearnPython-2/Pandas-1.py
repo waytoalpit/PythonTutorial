@@ -48,6 +48,6 @@ df_grpBy=df_final[["state","Jan","Feb","Mar","total"]].groupby('state').sum()
 print (df_grpBy)
 
 #export to excel
-df_final.to_excel('new-excel-comp-data.xls', index=True)
+df_final.to_excel('new-excel-comp-data.xlsx', index=True)
 
 #example completed

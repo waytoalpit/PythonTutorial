@@ -11,4 +11,4 @@ cursor.execute("select * from testtable")
 rows = cursor.fetchall()
 
 columns = [desc[0] for desc in cursor.description]
-pandas.DataFrame(list(rows), columns=columns).to_excel('dbExcel.xls', index=True)
+pandas.DataFrame(list(rows), columns=columns).to_excel('dbExcel.xlsx', index=True)
